@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 export function NavBar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
@@ -14,94 +14,90 @@ export function NavBar() {
   }, []);
 
   return (
-    <nav className="w-full flex justify-center mb-2 relative px-0 z-20">
-      <div className="w-full flex items-center justify-center relative min-h-[26px] py-2 md:py-3 bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
-        <div className="hidden md:flex justify-around gap-6 ">
+    <nav className="w-full flex justify-center mb-8 relative z-20">
+      <div className="w-full flex items-center justify-center relative py-4 md:py-5 text-[#FFF5EE] bg-[#2a2b2b]/95 backdrop-blur-sm border-b border-gray-200">
+        <div className="hidden md:flex gap-10">
           <Link
             href="/"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-sm font-light tracking-wider uppercase hover:text-gray-600 transition-colors duration-200"
           >
             Home
           </Link>
           <Link
             href="/services"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-sm font-light tracking-wider uppercase hover:text-gray-600 transition-colors duration-200"
           >
             Services
           </Link>
           <Link
             href="/about"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-sm font-light tracking-wider uppercase hover:text-gray-600 transition-colors duration-200"
           >
-            About Us
+            About
           </Link>
-
           <Link
             href="/gallery"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-sm font-light tracking-wider uppercase hover:text-gray-600 transition-colors duration-200"
           >
             Gallery
           </Link>
           <Link
             href="/contact"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-sm font-light tracking-wider uppercase hover:text-gray-600 transition-colors duration-200"
           >
-            Contact Us
+            Contact
           </Link>
         </div>
 
-        <div className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 items-center h-full">
+        {/* Mobile Menu Button */}
+        <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="bg-none border-none cursor-pointer p-0 flex flex-col justify-center items-center w-7 h-7"
-            aria-label="Open menu"
+            className="p-2 flex flex-col justify-center items-center gap-1"
+            aria-label="Toggle menu"
           >
-            <span
-              className="w-5 h-[1.2px] bg-white mb-[4px]"
-              style={{ borderRadius: 0 }}
-            ></span>
-            <span
-              className="w-5 h-[1.2px] bg-white mb-[4px]"
-              style={{ borderRadius: 0 }}
-            ></span>
-            <span
-              className="w-5 h-[1.2px] bg-white"
-              style={{ borderRadius: 0 }}
-            ></span>
+            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
+            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
+            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
           </button>
         </div>
-        {/* Mobile dropdown */}
-        {/* Mobile dropdown (simplified) */}
+
         {dropdownOpen && isMobile && (
-          <div className="absolute top-full left-0 right-0 w-full bg-[#2a2b2b]/95 border-t border-[#444] shadow-lg z-30 flex flex-col items-stretch overflow-hidden animate-fade-in">
+          <div className="absolute top-full left-0 right-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg z-30 flex flex-col">
             <Link
               href="/"
-              className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left border-b border-[#444] font-semibold"
+              className="block px-6 py-4 text-[#2a2b2b] text-sm font-light tracking-wider uppercase border-b border-gray-100 hover:bg-gray-50 transition-colors"
               onClick={() => setDropdownOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/services"
-              className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left border-b border-[#444] font-semibold"
+              className="block px-6 py-4 text-[#2a2b2b] text-sm font-light tracking-wider uppercase border-b border-gray-100 hover:bg-gray-50 transition-colors"
               onClick={() => setDropdownOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left font-semibold"
+              className="block px-6 py-4 text-[#2a2b2b] text-sm font-light tracking-wider uppercase border-b border-gray-100 hover:bg-gray-50 transition-colors"
               onClick={() => setDropdownOpen(false)}
             >
               About
             </Link>
-            <div className="w-full border-t border-[#444]" />
             <Link
-              href="/contact"
-              className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left font-semibold"
+              href="/gallery"
+              className="block px-6 py-4 text-[#2a2b2b] text-sm font-light tracking-wider uppercase border-b border-gray-100 hover:bg-gray-50 transition-colors"
               onClick={() => setDropdownOpen(false)}
             >
-              Contact Us
+              Gallery
+            </Link>
+            <Link
+              href="/contact"
+              className="block px-6 py-4 text-[#2a2b2b] text-sm font-light tracking-wider uppercase hover:bg-gray-50 transition-colors"
+              onClick={() => setDropdownOpen(false)}
+            >
+              Contact
             </Link>
           </div>
         )}
