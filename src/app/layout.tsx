@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { NavBar } from "../../components/navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +15,42 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-[#ededed] min-h-screen w-full m-0 p-0">
+        <div className="w-full flex flex-col items-center mx-auto pr-4 pl-4">
+          <div className="relative w-full">
+            <img
+              src="/images/cover.jpg"
+              alt="Cover"
+              className="w-full object-contain object-top h-auto max-h-screen"
+            />
+          </div>
+          <NavBar />
+          <div className="flex flex-col items-center justify-center mx-auto w-full max-w-[820px]">
+            <div>{children}</div>
+          </div>
+        </div>
       </body>
+
+      <footer className="flex justify-center items-center py-6 text-center gap-1.5 mx-auto w-full max-w-[820px]">
+        &copy; {new Date().getFullYear()} LLC <p>|</p>
+        <a
+          href="https://www.instagram.com/glr_solution/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-2 underline"
+        >
+          Instagram
+        </a>{" "}
+        <p>|</p>
+        <a
+          href="https://www.instagram.com/glr_solution/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-2 underline"
+        >
+          Facebook
+        </a>
+      </footer>
     </html>
   );
 }
