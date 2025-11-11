@@ -1,36 +1,68 @@
 "use client";
 
 export default function Home() {
+  const services = [
+    {
+      title: "Expert Furniture Restoration",
+      description:
+        "We restore and repair leather and vinyl furniture for homes, offices, and healthcare facilities. With precision and care, we bring back the original look, feel, and comfort of your furniture.",
+      image: "/images/couch.jpg",
+      alt: "Couch",
+    },
+    {
+      title: "Automotive Interior Repair",
+      description:
+        "We specialize in the restoration and repair of leather car interiors and steering wheels, providing top-quality craftsmanship and guaranteed results. Our fast and reliable service brings your automotive leather back to life - repairing wear, scratches, cracks, and all types of damage with precision and care.",
+      image: "/images/interior.jpg",
+      alt: "Interior",
+    },
+    {
+      title: "RV & Motor Home Upholstery",
+      description:
+        "Transform your RV's interior with custom upholstery. Our experienced craftsmen can revive worn seats or create a fresh new design using premium materials for a refined and comfortable travel experience.",
+      image: "/images/rv.jpg",
+      alt: "RV",
+    },
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pt-4 sm:pt-10 px-2 sm:px-4 font-sans">
-      <main className="flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto items-center">
-        <h2 className="text-xl sm:text-2xl text-center text-gray-800 font-bold mb-2">
-          Expert Leather Repair & Reupholstery
-        </h2>
-        <p className="text-base sm:text-lg text-center text-gray-700 font-medium">
-          Bring Your Leather and Upholstery Back to Life
-        </p>
-        <p className="text-sm sm:text-base text-center max-w-2xl text-gray-700">
-          At GLR Solution, we specialize in restoring the comfort, beauty, and
-          value of your leather and upholstered furniture or vehicle interiors.
-          From faded car seats to torn sofas, we provide meticulous repair,
-          restoration, and reupholstery services tailored to your needs. Our
-          goal is simple — to make your furniture and interiors look and feel
-          like new again.
-        </p>
-        <a
-          href="/contact"
-          className="mt-3 px-3 py-2 text-sm sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg bg-[#2a2b2b] text-white rounded shadow hover:bg-[#444] transition"
-        >
-          Request a Free Estimate
-        </a>
-      </main>
-      <div className="mt-8 w-full flex flex-col items-center">
-        <div className="w-full max-w-md text-center">
-          {/* Contact info now in layout */}
+    <div className="flex flex-col items-center pt-16 pb-24">
+      <main className="w-full max-w-7xl px-4 sm:px-6">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-2xl font-light text-[#2a2b2b] ">
+            Expert Leather Repair & Reupholstery
+          </h1>
+          {/* <div className="w-40 h-1 bg-[#2a2b2b] mx-auto"></div> */}
         </div>
-      </div>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {services.map((service, index) => (
+            <div key={index} className="flex flex-col group">
+              <div className="relative overflow-hidden mb-6">
+                <img
+                  src={service.image}
+                  alt={service.alt}
+                  className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="flex flex-col grow space-y-4">
+                <h2 className="text-2xl font-light text-[#2a2b2b] tracking-tight">
+                  {service.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed font-light grow">
+                  {service.description}
+                </p>
+
+                <button className="self-start text-[#2a2b2b] font-light border-b border-[#2a2b2b] pb-1 hover:border-[#444] hover:text-[#8f8c8c] transition-colors duration-300">
+                  Learn More →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
