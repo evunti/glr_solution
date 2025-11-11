@@ -73,7 +73,6 @@ export function NavBar() {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}

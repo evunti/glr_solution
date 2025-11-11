@@ -28,13 +28,18 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center pt-16 pb-24">
       <main className="w-full max-w-7xl px-4 sm:px-6">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-2xl font-light text-[#2a2b2b] ">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-[#2a2b2b] mb-4">
             Expert Leather Repair & Reupholstery
           </h1>
-          {/* <div className="w-40 h-1 bg-[#2a2b2b] mx-auto"></div> */}
+          <div className="w-24 h-1 bg-[#2a2b2b] mx-auto mb-6"></div>
+          <p className="text-lg sm:text-xl text-gray-600 font-light max-w-3xl mx-auto">
+            Premium restoration services for furniture, automotive interiors,
+            and RV upholstery
+          </p>
         </div>
 
+        {/* Services Grid */}
         <div className="grid md:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col group">
