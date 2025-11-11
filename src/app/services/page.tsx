@@ -29,10 +29,10 @@ export default function Services() {
     <div className="flex flex-col items-center pt-16 pb-24">
       <main className="w-full max-w-7xl px-4 sm:px-6">
         <div className="text-center mb-10">
-          <h1 className="text-2xl sm:text-6xl font-light text-[#2a2b2b] ">
+          <h1 className="text-4xl sm:text-2xl font-light text-[#2a2b2b] ">
             Expert Leather Repair & Reupholstery
           </h1>
-          <div className="w-20 h-1 bg-[#2a2b2b] mx-auto"></div>
+          {/* <div className="w-40 h-1 bg-[#2a2b2b] mx-auto"></div> */}
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
