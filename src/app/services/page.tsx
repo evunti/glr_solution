@@ -17,7 +17,9 @@ export default function Services() {
               offices, and healthcare facilities.With precision and care, we
               bring back the original look, feel, and comfort of your furniture.
             </p>
-            <button>Learn More </button>
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+              Learn More{" "}
+            </button>
           </div>
           <div className="flex-start flex-col space-y-4">
             <img
@@ -33,7 +35,9 @@ export default function Services() {
               automotive leather back to life - repairing wear, scratches,
               cracks, and all types of damage with precision and care.
             </p>
-            <button className="">Learn More </button>
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+              Learn More{" "}
+            </button>
           </div>
           <div className="flex-start flex-col space-y-4">
             <img
@@ -48,7 +52,9 @@ export default function Services() {
               design using premium materials for a refined and comfortable
               travel experience.
             </p>
-            <button>Learn More </button>
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+              Learn More{" "}
+            </button>
           </div>
         </div>
       </main>
