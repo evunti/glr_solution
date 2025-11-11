@@ -2,57 +2,57 @@
 
 export default function Services() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-10 pb-20">
       <main className="w-full max-w-6xl flex flex-col items-center ">
         <div className="grid grid-cols-3 gap-10 ">
-          <div className="flex-start flex-col space-y-4">
+          <div className="flex flex-col space-y-4">
             <img
               src="/images/couch.jpg"
               alt="Couch"
               className="w-full h-64 object-cover "
             />
             <h2 className="">Expert Furniture Restoration</h2>
-            <p className="">
+            <p className="grow">
               We restore and repair leather and vinyl furniture for homes,
               offices, and healthcare facilities.With precision and care, we
               bring back the original look, feel, and comfort of your furniture.
             </p>
-            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b]  text-white  shadow hover:bg-[#444] transition">
               Learn More{" "}
             </button>
           </div>
-          <div className="flex-start flex-col space-y-4">
+          <div className="flex flex-col space-y-4">
             <img
               src="/images/interior.jpg"
               alt="Interior"
               className="w-full h-64 object-cover "
             />
             <h2>Automotive Interior Repair</h2>
-            <p>
+            <p className="grow">
               We specialize in the restoration and repair of leather car
               interiors and steering wheels, providing top-quality craftsmanship
               and guaranteed results.Our fast and reliable service brings your
               automotive leather back to life - repairing wear, scratches,
               cracks, and all types of damage with precision and care.
             </p>
-            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b]  text-white  shadow hover:bg-[#444] transition">
               Learn More{" "}
             </button>
           </div>
-          <div className="flex-start flex-col space-y-4">
+          <div className="flex flex-col space-y-4">
             <img
               src="/images/rv.jpg"
               alt="RV"
               className="w-full h-64 object-cover "
             />
             <h2>RV & Motor Home Upholstery</h2>
-            <p>
+            <p className="grow">
               Transform your RV's interior with custom upholstery.Our
               experienced craftsmen can revive worn seats or create a fresh new
               design using premium materials for a refined and comfortable
               travel experience.
             </p>
-            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b] rounded-br rounded-tl text-white  shadow hover:bg-[#444] transition">
+            <button className=" p-1 text-sm sm:text-base bg-[#2a2b2b]  text-white  shadow hover:bg-[#444] transition">
               Learn More{" "}
             </button>
           </div>

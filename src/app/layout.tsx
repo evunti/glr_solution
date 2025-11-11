@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#ededed] min-h-screen w-full m-0 p-0">
-        <div className="w-full flex flex-col items-center mx-auto pr-5 pl-5">
+        <div className="w-full flex flex-col items-center mx-auto pr-10 pl-10">
           <div className="relative w-full">
             <img
               src="/images/cover.jpg"
