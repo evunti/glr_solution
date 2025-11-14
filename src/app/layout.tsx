@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Expert leather repair and reupholstery services for furniture, automotive interiors, and RV upholstery in Harrisonburg, VA",
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/favicon.ico", sizes: "any" }],
+    icon: [{ url: "/icon.png" }, { url: "/icon.png", sizes: "any" }],
   },
 };
 
@@ -19,9 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      </head>
       <NavBar />
       <body className="bg-[#ededed] min-h-screen w-full px-2 sm:px-6 md:px-10">
         <div className="w-full flex flex-col items-center mx-auto">
