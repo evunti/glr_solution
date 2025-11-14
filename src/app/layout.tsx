@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <NavBar />
-      <body className="bg-[#ededed] min-h-screen w-full m- pl-10 pr-10">
+      <body className="bg-[#ededed] min-h-screen w-full px-4 sm:px-6 md:px-10">
         <div className="w-full flex flex-col items-center mx-auto">
           <div className="relative w-full">
             <img
               src="/images/cover.jpg"
               alt="Cover"
-              className="w-full object-contain object-top h-auto max-h-screen"
+              className="w-full object-contain object-top h-auto max-h-[60vh] sm:max-h-screen"
             />
           </div>
 

@@ -19,8 +19,16 @@ export function NavBar() {
 
   return (
     <nav className="w-full flex justify-center mb-8 mt-2 relative z-0">
-      <div className="w-full flex items-center justify-center relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl">
-        <div className="hidden md:flex gap-10">
+      <div className="w-full flex items-center justify-between relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl px-4 md:px-8">
+        <div className="hidden md:flex items-center">
+          <img
+            src="/images/label.png"
+            alt="GLR Solution Logo"
+            className="h-12 w-auto"
+          />
+        </div>
+
+        <div className="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2">
           <Link
             href="/"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
@@ -71,6 +79,18 @@ export function NavBar() {
           >
             Contact
           </Link>
+        </div>
+
+        <div className="hidden md:flex flex-col items-end text-right">
+          <p className="text-sm font-light tracking-wide text-[color-brand]">
+            The Best American Materials & Great Prices
+          </p>
+          <a
+            href="tel:540-255-8494"
+            className="text-xl font-light tracking-wider text-[#004526] "
+          >
+            540-255-8494
+          </a>
         </div>
 
         <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2">
