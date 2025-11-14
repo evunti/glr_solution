@@ -29,17 +29,16 @@ export default function Home() {
     <div className="flex flex-col items-center pt-16 pb-24">
       <main className="w-full max-w-7xl px-4 sm:px-6">
         <div className="text-center mb-20">
-          <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-[#2a2b2b] mb-4">
+          <h1 className="text-5xl sm:text-5xl font-light tracking-wider text-[color-brand] mb-2">
             Expert Leather Repair & Reupholstery
           </h1>
-          <div className="w-24 h-1 bg-[#2a2b2b] mx-auto mb-6"></div>
-          <p className="text-lg sm:text-xl text-gray-600 font-light max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-[color-brand] mx-auto mb-2"></div>
+          <p className="text-lg sm:text-xl text-[color-brand]/70 font-light tracking-wide max-w-3xl mx-auto">
             Premium restoration services for furniture, automotive interiors,
             and RV upholstery
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col group">
@@ -53,14 +52,14 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col grow space-y-4">
-                <h2 className="text-2xl font-light text-[#2a2b2b] tracking-tight">
+                <h2 className="text-2xl font-light text-[color-brand] tracking-wide">
                   {service.title}
                 </h2>
-                <p className="text-gray-700 leading-relaxed font-light grow">
+                <p className="text-[color-brand]/70 leading-relaxed font-light grow">
                   {service.description}
                 </p>
 
-                <button className="self-start text-[#2a2b2b] font-light border-b border-[#2a2b2b] pb-1 hover:border-[#444] hover:text-[#8f8c8c] transition-colors duration-300">
+                <button className="self-start text-[color-brand] font-light tracking-wide border-b border-[color-brand] pb-1 hover:border-[color-brand]/70 hover:text-[color-brand]/70 transition-colors duration-300">
                   Learn More →
                 </button>
               </div>

@@ -18,15 +18,15 @@ export function NavBar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="w-full flex justify-center mb-8 relative z-20">
-      <div className="w-full flex items-center justify-center relative py-4 md:py-5 text-[#FFF5EE] bg-[#2a2b2b]/95 backdrop-blur-sm border-b border-gray-200">
+    <nav className="w-full flex justify-center mb-8 mt-2 relative z-0">
+      <div className="w-full flex items-center justify-center relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl">
         <div className="hidden md:flex gap-10">
           <Link
             href="/"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
               isActive("/")
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-[#FFF5EE]/70 hover:text-[#FFF5EE]"
+                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                : "text-[color-brand]/70 hover:text-[color-brand]"
             }`}
           >
             Home
@@ -35,8 +35,8 @@ export function NavBar() {
             href="/services"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
               isActive("/services")
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-[#FFF5EE]/70 hover:text-[#FFF5EE]"
+                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                : "text-[color-brand]/70 hover:text-[color-brand]"
             }`}
           >
             Services
@@ -45,8 +45,8 @@ export function NavBar() {
             href="/about"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
               isActive("/about")
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-[#FFF5EE]/70 hover:text-[#FFF5EE]"
+                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                : "text-[color-brand]/70 hover:text-[color-brand]"
             }`}
           >
             About
@@ -55,8 +55,8 @@ export function NavBar() {
             href="/gallery"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
               isActive("/gallery")
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-[#FFF5EE]/70 hover:text-[#FFF5EE]"
+                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                : "text-[color-brand]/70 hover:text-[color-brand]"
             }`}
           >
             Gallery
@@ -65,8 +65,8 @@ export function NavBar() {
             href="/contact"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
               isActive("/contact")
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-[#FFF5EE]/70 hover:text-[#FFF5EE]"
+                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                : "text-[color-brand]/70 hover:text-[color-brand]"
             }`}
           >
             Contact
@@ -79,9 +79,9 @@ export function NavBar() {
             className="p-2 flex flex-col justify-center items-center gap-1"
             aria-label="Toggle menu"
           >
-            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
-            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
-            <span className="w-6 h-px bg-[#2a2b2b] transition-all"></span>
+            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
+            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
+            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
           </button>
         </div>
 
@@ -91,8 +91,8 @@ export function NavBar() {
               href="/"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${
                 isActive("/")
-                  ? "text-[#2a2b2b] bg-gray-100 font-normal"
-                  : "text-[#2a2b2b]/70 hover:bg-gray-50 hover:text-[#2a2b2b]"
+                  ? "text-[color-brand] bg-gray-100 font-normal"
+                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
               }`}
               onClick={() => setDropdownOpen(false)}
             >
@@ -102,8 +102,8 @@ export function NavBar() {
               href="/services"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${
                 isActive("/services")
-                  ? "text-[#2a2b2b] bg-gray-100 font-normal"
-                  : "text-[#2a2b2b]/70 hover:bg-gray-50 hover:text-[#2a2b2b]"
+                  ? "text-[color-brand] bg-gray-100 font-normal"
+                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
               }`}
               onClick={() => setDropdownOpen(false)}
             >
@@ -113,8 +113,8 @@ export function NavBar() {
               href="/about"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${
                 isActive("/about")
-                  ? "text-[#2a2b2b] bg-gray-100 font-normal"
-                  : "text-[#2a2b2b]/70 hover:bg-gray-50 hover:text-[#2a2b2b]"
+                  ? "text-[color-brand] bg-gray-100 font-normal"
+                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
               }`}
               onClick={() => setDropdownOpen(false)}
             >
@@ -124,8 +124,8 @@ export function NavBar() {
               href="/gallery"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${
                 isActive("/gallery")
-                  ? "text-[#2a2b2b] bg-gray-100 font-normal"
-                  : "text-[#2a2b2b]/70 hover:bg-gray-50 hover:text-[#2a2b2b]"
+                  ? "text-[color-brand] bg-gray-100 font-normal"
+                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
               }`}
               onClick={() => setDropdownOpen(false)}
             >
@@ -135,8 +135,8 @@ export function NavBar() {
               href="/contact"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase transition-colors ${
                 isActive("/contact")
-                  ? "text-[#2a2b2b] bg-gray-100 font-normal"
-                  : "text-[#2a2b2b]/70 hover:bg-gray-50 hover:text-[#2a2b2b]"
+                  ? "text-[color-brand] bg-gray-100 font-normal"
+                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
               }`}
               onClick={() => setDropdownOpen(false)}
             >

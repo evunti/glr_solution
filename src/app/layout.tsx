@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <NavBar />
       <body className="bg-[#ededed] min-h-screen w-full m- pl-10 pr-10">
         <div className="w-full flex flex-col items-center mx-auto">
           <div className="relative w-full">
@@ -24,7 +25,7 @@ export default function RootLayout({
               className="w-full object-contain object-top h-auto max-h-screen"
             />
           </div>
-          <NavBar />
+
           <div className="flex flex-col items-center justify-center mx-auto w-full">
             <div>{children}</div>
           </div>
