@@ -16,13 +16,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <NavBar />
-      <body className="bg-[#ededed] min-h-screen w-full px-4 sm:px-6 md:px-10">
+      <body className="bg-[#ededed] min-h-screen w-full px-2 sm:px-6 md:px-10">
         <div className="w-full flex flex-col items-center mx-auto">
-          <div className="relative w-full">
+          <div className="md:hidden w-full flex flex-col flex-end items-end mr-4 ">
+            <p className="text-xs font-light tracking-wide text-[color-brand]">
+              The Best American Materials & Great Prices
+            </p>
+            <a
+              href="tel:540-255-8494"
+              className=" text-lg font-light tracking-wider text-second"
+            >
+              540-255-8494
+            </a>
+          </div>
+
+          <div className="relative w-full hidden md:block mt-4">
             <img
               src="/images/cover.jpg"
               alt="Cover"
-              className="w-full object-contain object-top h-auto max-h-[60vh] sm:max-h-screen"
+              className="w-full object-cover object-center h-auto max-h-[80vh] sm:max-h-screen"
             />
           </div>
 
@@ -32,8 +44,8 @@ export default function RootLayout({
         </div>
       </body>
 
-      <footer className="flex justify-center items-center py-6 text-center gap-1.5 mx-auto w-full max-w-[820px]">
-        &copy; {new Date().getFullYear()} LLC <p>|</p>
+      <footer className="flex justify-center items-center py-6 text-center gap-1.5 mx-auto w-full max-w-[820px] text-sm sm:text-sm font-light  text-[color-brand]">
+        &copy; {new Date().getFullYear()} GLR Solution <p>|</p>
         <a
           href="https://www.instagram.com/glr_solution/"
           target="_blank"

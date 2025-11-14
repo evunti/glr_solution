@@ -18,15 +18,15 @@ export function NavBar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="w-full flex justify-center mb-8 mt-2 relative z-0">
+    <nav className="w-full flex justify-center mb-2 mt-2 relative z-50">
       <div className="w-full flex items-center justify-between relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl px-4 md:px-8">
-        <div className="hidden md:flex items-center">
+        <Link href="/" className="flex items-center">
           <img
             src="/images/label.png"
             alt="GLR Solution Logo"
-            className="h-12 w-auto"
+            className="h-8 md:h-12 w-auto cursor-pointer"
           />
-        </div>
+        </Link>
 
         <div className="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2">
           <Link
@@ -87,7 +87,7 @@ export function NavBar() {
           </p>
           <a
             href="tel:540-255-8494"
-            className="text-xl font-light tracking-wider text-[#004526] "
+            className="text-xl font-light tracking-wider text-second"
           >
             540-255-8494
           </a>
@@ -96,17 +96,17 @@ export function NavBar() {
         <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="p-2 flex flex-col justify-center items-center gap-1"
+            className=" flex flex-col justify-center items-center gap-1 "
             aria-label="Toggle menu"
           >
-            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
-            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
-            <span className="w-6 h-px bg-[color-brand] transition-all"></span>
+            <span className="w-6 h-px bg-brand transition-all"></span>
+            <span className="w-6 h-px bg-brand transition-all"></span>
+            <span className="w-6 h-px bg-brand transition-all"></span>
           </button>
         </div>
 
         {dropdownOpen && isMobile && (
-          <div className="absolute top-full left-0 right-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg z-30 flex flex-col">
+          <div className="absolute top-full left-0 right-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg z-50 flex flex-col">
             <Link
               href="/"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${

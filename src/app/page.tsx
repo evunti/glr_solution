@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center pt-8 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-7xl px-4 sm:px-6">
-        <div className="text-center mb-12 sm:mb-20">
-          <h1 className="text-3xl sm:text-5xl font-light tracking-wide sm:tracking-wider text-[color-brand] mb-3 sm:mb-4 leading-tight">
+        <div className="text-center mb-10 sm:mb-15">
+          <h1 className="text-3xl sm:text-5xl font-light tracking-wide sm:tracking-wider text-[color-brand] mb-2 sm:mb-3 ">
             Expert Leather Repair & Reupholstery
           </h1>
           <div className="w-16 sm:w-24 h-1 bg-[color-brand] mx-auto mb-4 sm:mb-6"></div>
