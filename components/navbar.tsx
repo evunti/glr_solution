@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 export function NavBar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
 
@@ -28,7 +29,7 @@ export function NavBar() {
           />
         </Link>
 
-        <div className="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2">
+        <div className="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2 items-center">
           <Link
             href="/"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
@@ -39,16 +40,47 @@ export function NavBar() {
           >
             Home
           </Link>
-          <Link
-            href="/services"
-            className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
-              isActive("/services")
-                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
-                : "text-[color-brand]/70 hover:text-[color-brand]"
-            }`}
-          >
-            Services
-          </Link>
+
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+              className={`text-sm font-light tracking-wider uppercase transition-all duration-200 cursor-pointer  ${
+                pathname.startsWith("/services")
+                  ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                  : "text-[color-brand]/70 hover:text-[color-brand]"
+              }`}
+            >
+              Services
+            </button>
+
+            {servicesDropdownOpen && (
+              <div className="absolute top-full left-0 mt-3 bg-white/90 backdrop-blur-md border-t-2 border-[color-brand]/20 shadow-sm z-50 min-w-[220px]">
+                <Link
+                  href="/services/furniture"
+                  onClick={() => setServicesDropdownOpen(false)}
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  Furniture Restoration
+                </Link>
+                <Link
+                  href="/services/automotive"
+                  onClick={() => setServicesDropdownOpen(false)}
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  Automotive Interior
+                </Link>
+                <Link
+                  href="/services/upholstery"
+                  onClick={() => setServicesDropdownOpen(false)}
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  RV & Upholstery
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link
             href="/about"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
