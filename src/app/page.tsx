@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Home() {
   const services = [
     {
@@ -8,6 +10,7 @@ export default function Home() {
         "We restore and repair leather and vinyl furniture for homes, offices, and healthcare facilities. With precision and care, we bring back the original look, feel, and comfort of your furniture.",
       image: "/images/couch.jpg",
       alt: "Couch",
+      link: "/services/furniture",
     },
     {
       title: "Automotive Interior Repair",
@@ -15,6 +18,7 @@ export default function Home() {
         "We specialize in the restoration and repair of leather car interiors and steering wheels, providing top-quality craftsmanship and guaranteed results. Our fast and reliable service brings your automotive leather back to life - repairing wear, scratches, cracks, and all types of damage with precision and care.",
       image: "/images/interior.jpg",
       alt: "Interior",
+      link: "/services/automotive",
     },
     {
       title: "RV & Motor Home Upholstery",
@@ -22,6 +26,7 @@ export default function Home() {
         "Transform your RV's interior with custom upholstery. Our experienced craftsmen can revive worn seats or create a fresh new design using premium materials for a refined and comfortable travel experience.",
       image: "/images/rv.jpg",
       alt: "RV",
+      link: "/services/upholstery",
     },
   ];
 
@@ -59,9 +64,12 @@ export default function Home() {
                   {service.description}
                 </p>
 
-                <button className="self-start text-sm sm:text-base text-[color-brand] font-light tracking-wide border-b border-[color-brand] pb-1 py-2 hover:border-[color-brand]/70 hover:text-[color-brand]/70 transition-colors duration-300">
+                <Link
+                  href={service.link}
+                  className="self-start text-sm sm:text-base text-[color-brand] font-light tracking-wide border-b border-[color-brand] pb-1 py-2 hover:border-[color-brand]/70 hover:text-[color-brand]/70 transition-colors duration-300"
+                >
                   Learn More →
-                </button>
+                </Link>
               </div>
             </div>
           ))}
