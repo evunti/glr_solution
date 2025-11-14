@@ -18,7 +18,7 @@ export default function Contact() {
         </p>
         <a
           href="mailto:info@glrsolution.com"
-          className="mt-4 px-6 py-3 text-sm sm:px-8 sm:py-3 sm:text-base bg-[color-brand] text-white font-light tracking-wide rounded shadow hover:bg-[color-brand]/80 transition active:scale-95"
+          className="mt-4 px-6 py-3 text-sm sm:px-8 sm:py-3 sm:text-base bg-[color-brand] text-[color-brand] font-light tracking-wide rounded shadow hover:bg-[color-brand]/20 transition active:scale-95"
         >
           Email Us
         </a>
