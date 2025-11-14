@@ -8,10 +8,7 @@ export const metadata: Metadata = {
   description:
     "Expert leather repair and reupholstery services for furniture, automotive interiors, and RV upholstery in Harrisonburg, VA",
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.ico", sizes: "any" },
-    ],
+    icon: [{ url: "/favicon.ico" }, { url: "/favicon.ico", sizes: "any" }],
   },
 };
 
