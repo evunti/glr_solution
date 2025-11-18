@@ -21,7 +21,7 @@ export function NavBar() {
 
   return (
     <nav className="w-full flex justify-center mb-2 mt-2 relative z-50 px-2 sm:px-6 md:px-10">
-      <div className="w-full flex items-center justify-between relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl px-4 md:px-8">
+      <div className="w-full flex items-center justify-between relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl">
         <Link href="/" className="flex items-center">
           <img
             src="/images/label.png"
@@ -30,7 +30,7 @@ export function NavBar() {
           />
         </Link>
 
-        <div className="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2 items-center">
+        <div className="hidden md:flex gap-10 items-center">
           <Link
             href="/"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
@@ -42,7 +42,6 @@ export function NavBar() {
             Home
           </Link>
 
-          {/* Services Dropdown */}
           <div className="relative">
             <button
               onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
