@@ -20,7 +20,7 @@ export function NavBar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="w-full flex justify-center mb-2 mt-2 relative z-50">
+    <nav className="w-full flex justify-center mb-2 mt-2 relative z-50 px-2 sm:px-6 md:px-10">
       <div className="w-full flex items-center justify-between relative py-2 md:py-3 text-[color-brand] backdrop-blur-sm border-b border-[color-brand]/20 max-w-8xl px-4 md:px-8">
         <Link href="/" className="flex items-center">
           <img
