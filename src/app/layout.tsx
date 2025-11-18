@@ -42,6 +42,15 @@ export default function RootLayout({
                   alt="Cover"
                   className="w-full object-cover object-center h-auto max-h-[80vh] sm:max-h-screen"
                 />
+                <div className="absolute bottom-5 left-145 max-w-xl">
+                  <p className="text-sm font-light tracking-wide text-[#ededed]/90 leading-relaxed">
+                    GLR Solution combines craftsmanship and innovation to
+                    restore the beauty and elegance of leather and vinyl
+                    furniture, car and RV interiors, and more. We use only
+                    eco-friendly American materials and fine Italian leather to
+                    ensure quality, durability, and timeless appeal.
+                  </p>
+                </div>
               </div>
 
               <div className="flex flex-col items-center justify-center mx-auto w-full">
