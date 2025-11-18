@@ -4,11 +4,11 @@ export default function About() {
   return (
     <div className="flex flex-col items-center justify-center pt-8 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="text-center mb-6 sm:mb-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-[color-brand] ">
+        <div className="flex items-center gap-4 mb-6 sm:mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] whitespace-nowrap">
             About Us
           </h1>
-          <div className="w-16 sm:w-20 h-1 bg-[color-brand] mx-auto"></div>
+          <div className="grow h-px bg-black"></div>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
@@ -33,10 +33,15 @@ export default function About() {
               with the same care and dedication.
             </p>
           </section>
-          <div className="w-full h-px bg-gray-300"></div>
-          <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide text-center">
-            Our Services Include:
-          </h2>
+
+          <div className="flex items-center gap-4">
+            <div className="grow h-px bg-black"></div>
+            <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide whitespace-nowrap">
+              Our Services Include
+            </h2>
+            <div className="grow h-px bg-black"></div>
+          </div>
+
           <ul className="list-disc list-inside text-sm sm:text-base md:text-lg text-[color-brand]/70 font-light tracking-wide space-y-2 sm:columns-2 sm:gap-8 px-4 sm:px-0">
             {" "}
             <li>Leather and vinyl cleaning and repair</li>
@@ -49,9 +54,8 @@ export default function About() {
             <li>Repair of scratches, scuffs, cuts, burns, and pet damage</li>
             <li>Boat and RV upholstery</li>
           </ul>
-          <div className="w-full h-px bg-gray-300"></div>
-          <div className="bg-brand/90 opacity-30 p-6 sm:p-8 md:p-10 rounded">
-            <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed font-light tracking-wide text-center">
+          <div className="bg-[#2d5016]/10 border-l-4 border-[#2d5016] p-6 sm:p-8 md:p-10">
+            <p className="text-base sm:text-lg md:text-xl text-[color-brand] leading-relaxed font-light tracking-wide text-center italic">
               We take pride in our ability to handle even the most complex
               restoration projects — helping you enjoy your favorite furniture
               and interiors for years to come, with results that look beautiful
