@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#ededed] min-h-screen w-full flex justify-center">
-        <div className="w-full max-w-[1600px]">
+        <div className="w-full max-w-[1400px]">
           <NavBar />
           <div className="px-2 sm:px-6 md:px-10">
             <div className="w-full flex flex-col items-center mx-auto">
