@@ -21,7 +21,7 @@ export default function Home() {
       link: "/services/automotive",
     },
     {
-      title: "RV & Motor Home Upholstery",
+      title: "RV, Motor Home, and Boat Upholstery",
       description:
         "Transform your RV's interior with custom upholstery. Our experienced craftsmen can revive worn seats or create a fresh new design using premium materials for a refined and comfortable travel experience.",
       image: "/images/rv.jpg",

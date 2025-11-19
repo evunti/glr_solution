@@ -39,19 +39,19 @@ export default function Upholstery() {
           <div className="flex items-center gap-4">
             <div className="grow h-px bg-black"></div>
             <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide whitespace-nowrap">
-              Our RV & Upholstery Services Include:
+              Our RV & Upholstery Services Include
             </h2>
             <div className="grow h-px bg-black"></div>
           </div>
 
           <ul className="list-disc list-inside text-sm sm:text-base md:text-lg text-[color-brand]/70 font-light tracking-wide space-y-2 sm:columns-2 sm:gap-8 px-4 sm:px-0">
-            <li>Custom RV seat upholstery</li>
+            <li>Origianl and Custom RV seat upholstery</li>
             <li>Dinette and booth restoration</li>
             <li>Cushion filler replacement and refilling</li>
 
             <li>Boat interior repair and upholstery (using Marine vinyl)</li>
 
-            <li>Custom design and material selection</li>
+            <li>Origianl and Custom design and material selection</li>
           </ul>
 
           <div className="bg-[#2d5016]/10 border-l-4 border-[#2d5016] p-6 sm:p-8 md:p-10">
