@@ -34,11 +34,11 @@ export default function Contact() {
               Contact Great Leather Repair Solution
             </h1>
           </div>
-          <p className="text-center text-small text-[color-brand]/80 leading-relaxed font-light tracking-wide">
+          <p className="text-center text-lg text-[color-brand]/80 leading-relaxed font-light tracking-wide">
             We are a family owned company located in Virginia.
           </p>
           <div className="text-center">
-            <p className="text-sm sm:text-base text-[color-brand]/70 font-light">
+            <p className="text-md text-[color-brand]/70 font-light">
               Text us at{" "}
               <a
                 href="tel:540-255-8494"
@@ -58,12 +58,19 @@ export default function Contact() {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
-          <div className="flex items-center gap-4">
-            <div className="grow h-px bg-black"></div>
-            <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide whitespace-nowrap">
-              Request a Free Estimate
-            </h2>
-            <div className="grow h-px bg-black"></div>
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="grow h-px bg-black"></div>
+              <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide whitespace-nowrap">
+                Request a Free Estimate
+              </h2>
+              <div className="grow h-px bg-black"></div>
+            </div>
+            <p className="text-center text-sm sm:text-base text-[color-brand]/70 font-light tracking-wide">
+              Send a few photos to the e-mail or cell number listed above, along
+              with a brief description of the damage, and we'll get back to you
+              right away!
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
