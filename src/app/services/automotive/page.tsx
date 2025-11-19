@@ -39,7 +39,7 @@ export default function Automotive() {
           <div className="flex items-center gap-4">
             <div className="grow h-px bg-black"></div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-[color-brand] tracking-wide text-center">
-              Our Automotive Services Include:
+              Our Automotive Services Include
             </h2>
             <div className="grow h-px bg-black"></div>
           </div>
