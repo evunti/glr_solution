@@ -48,11 +48,11 @@ export default function Furniture() {
           <ul className="list-disc list-inside text-sm sm:text-base md:text-lg text-[color-brand]/70 font-light tracking-wide space-y-2 sm:columns-2 sm:gap-8 px-4 sm:px-0">
             <li>Color restoration and repainting</li>
             <li>Scratch, scuff, and tear repair</li>
-            <li>Burns and pet damage restoration (scratches, chewing, stains)</li>
+            <li>
+              Burns and pet damage restoration (scratches, chewing, stains)
+            </li>
             <li>Cushion refilling and replacement</li>
             <li>Spring repair and replacement</li>
-            
-       
           </ul>
 
           <div className="bg-[#2d5016]/10 border-l-4 border-[#2d5016] p-6 sm:p-8 md:p-10">
