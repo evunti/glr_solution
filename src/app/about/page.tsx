@@ -47,7 +47,7 @@ export default function About() {
             <li>Leather and vinyl cleaning and repair</li>
             <li>Repainting and color restoration</li>
             <li>Conditioning and protection</li>
-            <li>Cushion refilling and replacement</li>
+            <li>Cushion filler replacement and refilling</li>
             <li>Full furniture reupholstery</li>
             <li>Spring repair and replacement</li>
             <li>Repair of recliners</li>
