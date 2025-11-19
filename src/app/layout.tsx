@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { NavBar } from "../../components/navbar";
+import CoverImage from "./CoverImage";
 
 export const metadata: Metadata = {
   title: "GLR Solution - Leather Repair & Reupholstery",
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#ededed] min-h-screen w-full flex justify-center">
+      <body className="bg-offwhite min-h-screen w-full flex justify-center">
         <div className="w-full max-w-[1200px]">
           <NavBar />
           <div className="px-2 sm:px-6 md:px-10">
@@ -36,22 +37,7 @@ export default function RootLayout({
                 </a>
               </div>
 
-              <div className="relative w-full hidden md:block mt-4">
-                <img
-                  src="/images/cover.jpg"
-                  alt="Cover"
-                  className="w-full object-cover object-center h-auto max-h-[80vh] sm:max-h-screen"
-                />
-                <div className="absolute bottom-5 left-145 max-w-xl">
-                  <p className="text-sm font-light tracking-wide text-[#ededed]/90 leading-relaxed">
-                    GLR Solution combines craftsmanship and innovation to
-                    restore the beauty and elegance of leather and vinyl
-                    furniture, car and RV interiors, and more. We use only
-                    eco-friendly American materials and fine Italian leather to
-                    ensure quality, durability, and timeless appeal.
-                  </p>
-                </div>
-              </div>
+              <CoverImage />
 
               <div className="flex flex-col items-center justify-center mx-auto w-full">
                 <div>{children}</div>
