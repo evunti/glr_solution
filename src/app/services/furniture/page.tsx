@@ -51,7 +51,7 @@ export default function Furniture() {
             <li>
               Burns and pet damage restoration (scratches, chewing, stains)
             </li>
-            <li>Cushion refilling and replacement</li>
+            <li>Cushion filler replacement and refilling</li>
             <li>Spring repair and replacement</li>
           </ul>
 
