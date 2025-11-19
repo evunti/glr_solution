@@ -40,7 +40,7 @@ export default function Furniture() {
           <div className="flex items-center gap-4">
             <div className="grow h-px bg-black"></div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-[color-brand] tracking-wide text-center">
-              Our Furniture Services Include:
+              Our Furniture Services Include
             </h2>
             <div className="grow h-px bg-black"></div>
           </div>
