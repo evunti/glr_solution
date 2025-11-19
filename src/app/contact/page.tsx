@@ -12,8 +12,21 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    // Construct email body
+    const subject = encodeURIComponent(
+      "Free Estimate Request from " + formData.name
+    );
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Phone: ${formData.phone || "Not provided"}\n\n` +
+        `Message:\n${formData.message || "No message provided"}\n\n` +
+        `Note: Photos should be attached separately if needed.`
+    );
+
+    // Open email client with pre-filled data
+    window.location.href = `mailto:untiloev@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (
@@ -119,7 +132,7 @@ export default function Contact() {
                 htmlFor="phone"
                 className="block text-sm sm:text-base font-light text-[color-brand] mb-2 tracking-wide"
               >
-                Phone Number (Optional)
+                Phone Number
               </label>
               <input
                 type="tel"
@@ -136,7 +149,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="block text-sm sm:text-base font-light text-[color-brand] mb-2 tracking-wide"
               >
-                Message (Optional)
+                Message
               </label>
               <textarea
                 id="message"
@@ -145,23 +158,6 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 className="w-full px-4 py-2 sm:py-3 border border-[color-brand]/30 bg-white text-[color-brand] font-light tracking-wide focus:outline-none focus:border-second transition-colors resize-vertical"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="photos"
-                className="block text-sm sm:text-base font-light text-[color-brand] mb-2 tracking-wide"
-              >
-                Attach Photos (Optional)
-              </label>
-              <input
-                type="file"
-                id="photos"
-                name="photos"
-                multiple
-                accept="image/*"
-                className="w-full px-4 py-2 sm:py-3 border border-[color-brand]/30 bg-white text-[color-brand] font-light tracking-wide focus:outline-none focus:border-second transition-colors file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:font-light file:bg-second/10 file:text-second hover:file:bg-second/20 file:cursor-pointer"
               />
             </div>
 
