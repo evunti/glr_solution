@@ -46,7 +46,6 @@ export default function Furniture() {
           </div>
 
           <ul className="list-disc list-inside text-sm sm:text-base md:text-lg text-[color-brand]/70 font-light tracking-wide space-y-2 sm:columns-2 sm:gap-8 px-4 sm:px-0">
-            <li>Leather and vinyl cleaning and conditioning</li>
             <li>Color restoration and repainting</li>
             <li>Scratch, scuff, and tear repair</li>
             <li>Burns and pet damage restoration</li>
