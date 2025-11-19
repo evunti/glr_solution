@@ -5,7 +5,7 @@ export default function Furniture() {
     <div className="flex flex-col items-center pt-8 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
         <div className="flex items-center gap-4 mb-6 sm:mb-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-[color-brand] whitespace-nowrap">
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[color-brand]">
             Furniture Restoration
           </h1>
           <div className="grow h-px bg-black"></div>
@@ -39,7 +39,7 @@ export default function Furniture() {
 
           <div className="flex items-center gap-4">
             <div className="grow h-px bg-black"></div>
-            <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] tracking-wide whitespace-nowrap">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-[color-brand] tracking-wide text-center">
               Our Furniture Services Include:
             </h2>
             <div className="grow h-px bg-black"></div>
