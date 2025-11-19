@@ -21,17 +21,28 @@ export default function About() {
               its original beauty, comfort, and value.
             </p>
 
-            <p className="text-base sm:text-lg text-[color-brand]/70 leading-relaxed font-light tracking-wide">
-              We use only high-quality, American-made materials and premium
-              Italian leather. Our advanced restoration techniques and attention
-              to detail ensure that every project meets the highest standards of
-              quality, durability, and sustainability.
-            </p>
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              <div className="flex-1 space-y-4">
+                <p className="text-base sm:text-lg text-[color-brand]/70 leading-relaxed font-light tracking-wide">
+                  We use only high-quality, American-made materials and premium
+                  Italian leather. Our advanced restoration techniques and
+                  attention to detail ensure that every project meets the
+                  highest standards of quality, durability, and sustainability.
+                </p>
 
-            <p className="text-base sm:text-lg text-[color-brand]/70 leading-relaxed font-light tracking-wide">
-              From minor repairs to complete reupholstery, we treat every piece
-              with the same care and dedication.
-            </p>
+                <p className="text-base sm:text-lg text-[color-brand]/70 leading-relaxed font-light tracking-wide">
+                  From minor repairs to complete reupholstery, we treat every
+                  piece with the same care and dedication.
+                </p>
+              </div>{" "}
+              <div className="w-full md:w-64 lg:w-80 shrink-0">
+                <img
+                  src="/images/adv.jpg"
+                  alt="GLR Solution"
+                  className="w-full h-auto  shadow-sm"
+                />
+              </div>
+            </div>
           </section>
 
           <div className="flex items-center gap-4">

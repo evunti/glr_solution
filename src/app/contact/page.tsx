@@ -13,7 +13,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Construct email body
     const subject = encodeURIComponent(
       "Free Estimate Request from " + formData.name
     );
@@ -25,8 +24,7 @@ export default function Contact() {
         `Note: Photos should be attached separately if needed.`
     );
 
-    // Open email client with pre-filled data
-    window.location.href = `mailto:untiloev@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@glrsolution.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (
@@ -48,7 +46,7 @@ export default function Contact() {
             </h1>
           </div>
           <p className="text-center text-lg text-[color-brand]/80 leading-relaxed font-light tracking-wide">
-            We are a family owned company located in Virginia.
+            We are a family owned business located in Virginia.
           </p>
           <div className="text-center">
             <p className="text-md text-[color-brand]/70 font-light">
