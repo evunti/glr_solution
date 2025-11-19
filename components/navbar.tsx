@@ -58,7 +58,7 @@ export function NavBar() {
             </button>
 
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 mt-3 bg-white/90 backdrop-blur-md border-t-2 border-[color-brand]/20 shadow-sm z-50 min-w-[220px]">
+              <div className="absolute top-full left-0 mt-0 pt-3 bg-white/90 backdrop-blur-md border-t-2 border-[color-brand]/20 shadow-sm z-50 min-w-[220px]">
                 <Link
                   href="/services/furniture"
                   className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
