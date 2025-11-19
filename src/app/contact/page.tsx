@@ -28,31 +28,32 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center pt-8 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="mb-8 sm:mb-12 space-y-2">
+        <div className="mb-8 sm:mb-12 space-y-4">
           <div>
             <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-light text-[color-brand] tracking-wide">
-              Great Leather Repair Solution
+              Contact Great Leather Repair Solution
             </h1>
-            <div className="h-px bg-black mt-2"></div>
           </div>
-          <div className="text-left">
-            <p className="text-base sm:text-lg text-[color-brand]/70 font-light tracking-wide">
-              Virginia – Harrisonburg
-            </p>
-            <div className="flex flex-col items-start gap-1 text-sm sm:text-base text-[color-brand]/70 font-light">
+          <p className="text-center text-small text-[color-brand]/80 leading-relaxed font-light tracking-wide">
+            We are a family owned company located in Virginia.
+          </p>
+          <div className="text-center">
+            <p className="text-sm sm:text-base text-[color-brand]/70 font-light">
+              Text us at{" "}
               <a
                 href="tel:540-255-8494"
                 className="hover:text-second transition-colors"
               >
                 540-255-8494
-              </a>
+              </a>{" "}
+              or email{" "}
               <a
                 href="mailto:info@glrsolution.com"
                 className="hover:text-second transition-colors"
               >
                 info@glrsolution.com
               </a>
-            </div>
+            </p>
           </div>
         </div>
 
