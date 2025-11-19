@@ -48,8 +48,9 @@ export default function About() {
             <li>Repainting and color restoration</li>
             <li>Conditioning and protection</li>
             <li>Cushion refilling</li>
-            <li>Full reupholstery</li>
+            <li>Full furniture reupholstery</li>
             <li>Spring repair and replacement</li>
+            <li>Repair of recliners</li>
             <li>Antique furniture restoration</li>
             <li>Repair of scratches, scuffs, cuts, burns, and pet damage</li>
             <li>Boat and RV upholstery</li>
