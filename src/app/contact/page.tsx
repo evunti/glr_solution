@@ -66,7 +66,7 @@ export default function Contact() {
               </h2>
               <div className="grow h-px bg-black"></div>
             </div>
-            <p className="text-center text-sm sm:text-base text-[color-brand]/70 font-light tracking-wide">
+            <p className="text-left text-base sm:text-lg text-[color-brand]/70 font-light tracking-wide">
               Send a few photos to the e-mail or cell number listed above, along
               with a brief description of the damage, and we'll get back to you
               right away!
@@ -74,6 +74,9 @@ export default function Contact() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            <p className="text-left text-xl text-[color-brand]/70 font-light tracking-wide ">
+              Alternatively, fill out this form:
+            </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label
