@@ -22,27 +22,27 @@ export default function FurnitureGallery() {
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
         <div className="flex items-center gap-4 mb-6 sm:mb-10">
           <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[color-brand]">
-            Automotive Gallery
+            Furniture Gallery
           </h1>
           <div className="grow h-px bg-black"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="text-base sm:text-lg text-[color-brand]/70 font-light tracking-wide mb-8 text-center">
             Professional furniture repair and restoration - before and after
             results
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <div className="flex flex-col gap-6 sm:gap-8">
             {images.map((image, index) => (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow"
               >
                 <img
-                  src={`/auto/${encodeURIComponent(image)}`}
-                  alt={`Automotive restoration ${index + 1}`}
-                  className="w-full h-80 sm:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                  src={`/Furniture/${encodeURIComponent(image)}`}
+                  alt={`Furniture restoration ${index + 1}`}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </div>
             ))}
