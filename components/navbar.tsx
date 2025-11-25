@@ -6,7 +6,9 @@ import { useState, useEffect } from "react";
 export function NavBar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileGalleryOpen, setMobileGalleryOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
 
@@ -91,16 +93,46 @@ export function NavBar() {
           >
             About
           </Link>
-          <Link
-            href="/gallery"
-            className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
-              isActive("/gallery")
-                ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
-                : "text-[color-brand]/70 hover:text-[color-brand]"
-            }`}
+
+          <div
+            className="relative group"
+            onMouseEnter={() => setGalleryDropdownOpen(true)}
+            onMouseLeave={() => setGalleryDropdownOpen(false)}
           >
-            Gallery
-          </Link>
+            <button
+              className={`text-sm font-light tracking-wider uppercase transition-all duration-200 cursor-pointer  ${
+                pathname.startsWith("/gallery")
+                  ? "text-[color-brand] border-b-2 border-[color-brand] pb-1"
+                  : "text-[color-brand]/70 hover:text-[color-brand]"
+              }`}
+            >
+              Gallery
+            </button>
+
+            {galleryDropdownOpen && (
+              <div className="absolute top-full left-0 mt-0 pt-3 bg-white/90 backdrop-blur-md border-t-2 border-[color-brand]/20 shadow-sm z-50 min-w-[220px]">
+                <Link
+                  href="/gallery/furniture"
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  Furniture Gallery
+                </Link>
+                <Link
+                  href="/gallery/automotive"
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  Automotive Gallery
+                </Link>
+                <Link
+                  href="/gallery/upholstery"
+                  className="block px-6 py-4 text-sm font-light tracking-wide text-[color-brand]/70 hover:text-[color-brand] transition-colors duration-200"
+                >
+                  RV & Upholstery Gallery
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link
             href="/contact"
             className={`no-underline text-sm font-light tracking-wider uppercase transition-all duration-200 ${
@@ -210,17 +242,55 @@ export function NavBar() {
             >
               About
             </Link>
-            <Link
-              href="/gallery"
-              className={`block px-6 py-4 text-sm font-light tracking-wider uppercase border-b border-gray-100 transition-colors ${
-                isActive("/gallery")
-                  ? "text-[color-brand] bg-gray-100 font-normal"
-                  : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
-              }`}
-              onClick={() => setDropdownOpen(false)}
-            >
-              Gallery
-            </Link>
+
+            {/* Mobile Gallery Dropdown */}
+            <div className="border-b border-gray-100">
+              <button
+                onClick={() => setMobileGalleryOpen(!mobileGalleryOpen)}
+                className={`w-full text-left px-6 py-4 text-sm font-light tracking-wider uppercase transition-colors ${
+                  pathname.startsWith("/gallery")
+                    ? "text-[color-brand] bg-gray-100 font-normal"
+                    : "text-[color-brand]/70 hover:bg-gray-50 hover:text-[color-brand]"
+                }`}
+              >
+                Gallery
+              </button>
+              {mobileGalleryOpen && (
+                <div className="bg-gray-50">
+                  <Link
+                    href="/gallery/furniture"
+                    className="block px-10 py-3 text-sm font-light text-[color-brand]/70 hover:text-[color-brand] transition-colors"
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      setMobileGalleryOpen(false);
+                    }}
+                  >
+                    Furniture Gallery
+                  </Link>
+                  <Link
+                    href="/gallery/automotive"
+                    className="block px-10 py-3 text-sm font-light text-[color-brand]/70 hover:text-[color-brand] transition-colors"
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      setMobileGalleryOpen(false);
+                    }}
+                  >
+                    Automotive Gallery
+                  </Link>
+                  <Link
+                    href="/gallery/upholstery"
+                    className="block px-10 py-3 text-sm font-light text-[color-brand]/70 hover:text-[color-brand] transition-colors"
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      setMobileGalleryOpen(false);
+                    }}
+                  >
+                    RV & Upholstery Gallery
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link
               href="/contact"
               className={`block px-6 py-4 text-sm font-light tracking-wider uppercase transition-colors ${

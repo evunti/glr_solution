@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 export default function CoverImage() {
   const pathname = usePathname();
   const isContactPage = pathname === "/contact";
+  const isGalleryPage = pathname.startsWith("/gallery");
 
-  if (isContactPage) {
+  if (isContactPage || isGalleryPage) {
     return null;
   }
 
