@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function FurnitureGallery() {
   const images = [
     "03. 20250306_175420.jpg",
@@ -37,12 +39,16 @@ export default function FurnitureGallery() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow"
+                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
               >
-                <img
+                <Image
                   src={`/Furniture/${encodeURIComponent(image)}`}
                   alt={`Furniture restoration ${index + 1}`}
+                  width={1200}
+                  height={800}
                   className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  loading={index < 2 ? "eager" : "lazy"}
+                  priority={index === 0}
                 />
               </div>
             ))}

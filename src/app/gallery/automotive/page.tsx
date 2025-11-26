@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function AutomotiveGallery() {
   const images = [
     "01. 20250308_1517410.jpg",
@@ -50,12 +52,17 @@ export default function AutomotiveGallery() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow"
+                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
+                style={{ aspectRatio: "4/3" }}
               >
-                <img
+                <Image
                   src={`/auto/${encodeURIComponent(image)}`}
                   alt={`Automotive restoration ${index + 1}`}
-                  className="w-full h-80 sm:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading={index < 4 ? "eager" : "lazy"}
+                  priority={index < 2}
                 />
               </div>
             ))}

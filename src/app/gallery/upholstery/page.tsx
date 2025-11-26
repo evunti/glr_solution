@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function UpholsteryGallery() {
   const images = [
     "20250323_141036.jpg",
@@ -44,12 +46,16 @@ export default function UpholsteryGallery() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow"
+                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
               >
-                <img
+                <Image
                   src={`/RV/${encodeURIComponent(image)}`}
                   alt={`RV & upholstery restoration ${index + 1}`}
+                  width={1200}
+                  height={800}
                   className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  loading={index < 2 ? "eager" : "lazy"}
+                  priority={index === 0}
                 />
               </div>
             ))}
