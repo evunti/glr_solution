@@ -59,10 +59,7 @@ export default function AutomotiveGallery() {
                   src={`/auto/${encodeURIComponent(image)}`}
                   alt={`Automotive restoration ${index + 1}`}
                   fill
-                  quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlZWVlIi8+PC9zdmc+"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   loading={index < 4 ? "eager" : "lazy"}
                   priority={index < 2}
