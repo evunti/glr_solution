@@ -48,12 +48,15 @@ export default function AutomotiveGallery() {
             after results
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-8 md:gap-y-8">
             {images.map((image, index) => (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
-                style={{ aspectRatio: "4/3", minHeight: "400px" }}
+                style={{
+                  aspectRatio: "4/3",
+                  minHeight: window.innerWidth < 768 ? "250px" : "400px",
+                }}
               >
                 <Image
                   src={`/auto/${encodeURIComponent(image)}`}
