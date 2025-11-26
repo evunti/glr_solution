@@ -53,6 +53,9 @@ export default function UpholsteryGallery() {
                   alt={`RV & upholstery restoration ${index + 1}`}
                   width={1200}
                   height={800}
+                  quality={75}
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZWVlZSIvPjwvc3ZnPg=="
                   className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   loading={index < 2 ? "eager" : "lazy"}
                   priority={index === 0}
