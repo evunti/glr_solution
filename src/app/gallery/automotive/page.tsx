@@ -52,10 +52,9 @@ export default function AutomotiveGallery() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
+                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100 min-h-[200px] md:min-h-[400px]"
                 style={{
                   aspectRatio: "4/3",
-                  minHeight: "200px",
                 }}
               >
                 <Image
