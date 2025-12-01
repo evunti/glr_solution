@@ -62,7 +62,7 @@ export default function AutomotiveGallery() {
                   alt={`Automotive restoration ${index + 1}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
                   loading={index < 4 ? "eager" : "lazy"}
                   priority={index < 2}
                 />
