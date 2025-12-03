@@ -46,7 +46,7 @@ export default function FurnitureGallery() {
                   alt={`Furniture restoration ${index + 1}`}
                   width={1200}
                   height={800}
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="w-full h-auto object-contain "
                   loading={index < 2 ? "eager" : "lazy"}
                   priority={index === 0}
                 />
