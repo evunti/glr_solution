@@ -41,22 +41,18 @@ export default function UpholsteryGallery() {
             after results
           </p>
 
-          <div className="flex flex-col gap-6 sm:gap-8">
+          <div className="columns-1 md:columns-2 gap-6 sm:gap-8">
             {images.map((image, index) => (
-              <div
+              <Image
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100"
-              >
-                <Image
-                  src={`/RV/${encodeURIComponent(image)}`}
-                  alt={`RV & upholstery restoration ${index + 1}`}
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-contain "
-                  loading={index < 2 ? "eager" : "lazy"}
-                  priority={index === 0}
-                />
-              </div>
+                src={`/RV/${encodeURIComponent(image)}`}
+                alt={`RV & upholstery restoration ${index + 1}`}
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain  shadow-sm hover:shadow-md transition-shadow mb-6 sm:mb-8 break-inside-avoid"
+                loading={index < 2 ? "eager" : "lazy"}
+                priority={index === 0}
+              />
             ))}
           </div>
         </div>
