@@ -25,7 +25,7 @@ export default function RootLayout({
           <NavBar />
           <div className="px-2 sm:px-6 md:px-10">
             <div className="w-full flex flex-col items-center mx-auto">
-              <div className="md:hidden w-full flex flex-col items-center text-center mb-4">
+              <div className="md:hidden w-full flex flex-col items-center text-center mb-2">
                 <p className="text-xs font-light tracking-wide text-[color-brand]">
                   The Best American Materials & Great Prices
                 </p>

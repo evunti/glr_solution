@@ -27,17 +27,16 @@ export default function UpholsteryGallery() {
   ];
 
   return (
-    <div className="flex flex-col items-center pt-8 sm:pt-16 pb-12 sm:pb-24">
+    <div className="flex flex-col items-center pt-4 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="flex items-center justify-center tracking-wide gap-4 mb-6 sm:mb-10">
-          <h1 className="text-center tracking-wide text-5xl font-light text-[color-brand]">
+        <div className="mb-6 sm:mb-10">
+          <h1 className="text-4xl font-light tracking-wide text-[color-brand] text-center">
             RV & Upholstery Gallery
           </h1>
-          <div className="h-px bg-black mt-3 sm:hidden"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <p className="text-base sm:text-lg text-[color-brand]/70 font-light tracking-wide mb-8 text-center">
+        <div className="w-full">
+          <p className="text-base sm:text-lg text-[color-brand]/70 font-light tracking-wide mb-6 sm:mb-8 text-center">
             Professional RV & upholstery repair and restoration - before and
             after results
           </p>
