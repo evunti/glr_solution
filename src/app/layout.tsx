@@ -44,9 +44,26 @@ export default function RootLayout({
               </div>
             </div>
 
-            <footer className="flex justify-center items-center py-6 text-center gap-4 mx-auto w-full max-w-[820px] text-sm sm:text-sm font-light text-[color-brand]">
-              &copy; {new Date().getFullYear()} GLR Solution
-              <div className="flex gap-3">
+            <footer className="flex flex-col items-center py-8 sm:py-12 text-center mx-auto w-full max-w-[820px]">
+              <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 text-sm sm:text-base font-light text-[color-brand]">
+                <a href="/" className="hover:opacity-70 transition-opacity">
+                  Home
+                </a>
+                <a
+                  href="/about"
+                  className="hover:opacity-70 transition-opacity"
+                >
+                  About
+                </a>
+                <a
+                  href="/contact"
+                  className="hover:opacity-70 transition-opacity"
+                >
+                  Contact
+                </a>
+              </nav>
+
+              <div className="flex gap-4 mb-6">
                 <a
                   href="https://www.instagram.com/glr_solution/"
                   target="_blank"
@@ -55,7 +72,7 @@ export default function RootLayout({
                   aria-label="Instagram"
                 >
                   <svg
-                    className="w-5 h-5 fill-gray-600"
+                    className="w-6 h-6 fill-gray-600"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -70,7 +87,7 @@ export default function RootLayout({
                   aria-label="Facebook"
                 >
                   <svg
-                    className="w-5 h-5 fill-gray-600"
+                    className="w-6 h-6 fill-gray-600"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -78,6 +95,11 @@ export default function RootLayout({
                   </svg>
                 </a>
               </div>
+
+              <p className="text-sm font-light text-[color-brand]/70">
+                &copy; {new Date().getFullYear()} GLR Solution, Inc. All rights
+                reserved.
+              </p>
             </footer>
           </div>
         </div>
