@@ -77,6 +77,31 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-light text-[color-brand] mb-6 tracking-wide">
+            Ready to Restore Your Leather?
+          </h2>
+          <p className="text-base sm:text-lg text-[color-brand]/70 font-light mb-8 leading-relaxed">
+            Get a free estimate today and discover how we can bring your
+            furniture and automotive interiors back to life with expert
+            craftsmanship and premium materials.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/contact"
+              className="bg-[#2d5016] text-white px-8 py-3 text-base sm:text-lg font-light tracking-wide hover:bg-[#2d5016]/90 transition-colors duration-300 shadow-sm hover:shadow-md"
+            >
+              Request Free Estimate
+            </Link>
+            <a
+              href="tel:540-255-8494"
+              className="border-2 border-[#2d5016] text-[#2d5016] px-8 py-3 text-base sm:text-lg font-light tracking-wide hover:bg-[#2d5016]/5 transition-colors duration-300"
+            >
+              Call: 540-255-8494
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   );

@@ -48,6 +48,22 @@ export default function FurnitureGallery() {
               />
             ))}
           </div>
+
+          <div className="mt-12 sm:mt-16 text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-light text-[color-brand] mb-4 tracking-wide">
+              Love What You See?
+            </h2>
+            <p className="text-base sm:text-lg text-[color-brand]/70 font-light mb-6 leading-relaxed">
+              Your furniture deserves the same expert care and restoration. Get
+              started with a free estimate today.
+            </p>
+            <a
+              href="/contact"
+              className="inline-block bg-[#2d5016] text-white px-8 py-3 text-base sm:text-lg font-light tracking-wide hover:bg-[#2d5016]/90 transition-colors duration-300 shadow-sm hover:shadow-md"
+            >
+              Request Your Free Estimate
+            </a>
+          </div>
         </div>
       </main>
     </div>
