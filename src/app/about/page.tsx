@@ -8,7 +8,6 @@ export default function About() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] text-center sm:text-left">
             About Us
           </h1>
-          <div className="h-px bg-black mt-3 sm:hidden"></div>
         </div>
         <div className="hidden sm:flex items-center gap-4 -mt-[4.5rem] mb-6 sm:mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] whitespace-nowrap invisible">
