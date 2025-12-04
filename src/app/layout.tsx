@@ -97,7 +97,7 @@ export default function RootLayout({
               </div>
 
               <p className="text-sm font-light text-[color-brand]/70">
-                &copy; {new Date().getFullYear()} GLR Solution, Inc. All rights
+                &copy; {new Date().getFullYear()} GLR Solutio LLC. All rights
                 reserved.
               </p>
             </footer>
