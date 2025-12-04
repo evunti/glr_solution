@@ -5,7 +5,7 @@ export default function About() {
     <div className="flex flex-col items-center justify-center pt-4 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
         <div className="mb-6 sm:mb-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] text-center sm:text-left">
+          <h1 className="text-5xl font-light tracking-wide text-[color-brand] text-center sm:text-left">
             About Us
           </h1>
         </div>
