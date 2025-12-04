@@ -47,25 +47,18 @@ export default function AutomotiveGallery() {
             after results
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-8 md:gap-y-8">
+          <div className="columns-1 md:columns-2 gap-4 md:gap-8">
             {images.map((image, index) => (
-              <div
+              <Image
                 key={index}
-                className="group relative overflow-hidden rounded shadow-sm hover:shadow-md transition-shadow bg-gray-100 min-h-[200px] md:min-h-[400px]"
-                style={{
-                  aspectRatio: "4/3",
-                }}
-              >
-                <Image
-                  src={`/auto/${encodeURIComponent(image)}`}
-                  alt={`Automotive restoration ${index + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain "
-                  loading={index < 4 ? "eager" : "lazy"}
-                  priority={index < 2}
-                />
-              </div>
+                src={`/auto/${encodeURIComponent(image)}`}
+                alt={`Automotive restoration ${index + 1}`}
+                width={500}
+                height={500}
+                className="w-full h-auto object-contain  shadow-sm hover:shadow-md transition-shadow mb-4 md:mb-8 break-inside-avoid"
+                loading={index < 4 ? "eager" : "lazy"}
+                priority={index < 2}
+              />
             ))}
           </div>
         </div>
