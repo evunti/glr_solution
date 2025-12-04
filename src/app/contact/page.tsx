@@ -24,7 +24,7 @@ export default function Contact() {
         `Note: Photos should be attached separately if needed.`
     );
 
-    window.location.href = `mailto:info@glrsolution.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:glrsolutionllc@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (
@@ -59,10 +59,10 @@ export default function Contact() {
               </a>{" "}
               or email{" "}
               <a
-                href="mailto:info@glrsolution.com"
+                href="mailto:glrsolutionllc@gmail.com"
                 className="hover:text-second transition-colors"
               >
-                info@glrsolution.com
+                glrsolutionllc@gmail.com
               </a>
             </p>
           </div>
