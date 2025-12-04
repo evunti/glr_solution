@@ -39,7 +39,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center pt-6 sm:pt-12 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="mb-8 sm:mb-12 space-y-4">
+        <div className="mb-8 sm:mb-12 space-y-4 bg-[#2d5016]/10 py-4 sm:py-8 px-3 sm:px-6">
           <div>
             <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-light text-[color-brand] tracking-wide">
               Contact Great Leather Repair Solution

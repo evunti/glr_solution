@@ -4,8 +4,14 @@ export default function About() {
   return (
     <div className="flex flex-col items-center justify-center pt-4 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="flex items-center gap-4 mb-6 sm:mb-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] whitespace-nowrap">
+        <div className="mb-6 sm:mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] text-center sm:text-left">
+            About Us
+          </h1>
+          <div className="h-px bg-black mt-3 sm:hidden"></div>
+        </div>
+        <div className="hidden sm:flex items-center gap-4 -mt-[4.5rem] mb-6 sm:mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-[color-brand] whitespace-nowrap invisible">
             About Us
           </h1>
           <div className="grow h-px bg-black"></div>
