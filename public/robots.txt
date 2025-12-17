@@ -1,0 +1,6 @@
+# robots.txt for GLR Solution
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://glr-solution.com/sitemap.xml
