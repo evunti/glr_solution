@@ -4,8 +4,8 @@ export default function Furniture() {
   return (
     <div className="flex flex-col items-center pt-4 sm:pt-16 pb-12 sm:pb-24">
       <main className="w-full max-w-5xl px-4 sm:px-6 md:px-8">
-        <div className="flex items-center gap-4 mb-6 sm:mb-10">
-          <h1 className="text-4xl font-light tracking-wide sm:tracking-wider text-[color-brand] mb-2 sm:mb-3 ">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-6 sm:mb-10">
+          <h1 className="text-4xl font-light tracking-wide sm:tracking-wider text-[color-brand] mb-2 sm:mb-3 text-center sm:text-left">
             {" "}
             Furniture Restoration
           </h1>
